@@ -140,7 +140,7 @@ line-height: normal;
   }
   
   .btn {
-
+border:none;
     color: #fff;
     background-color: #031B64;
     padding: 16px 24px;

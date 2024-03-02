@@ -219,9 +219,19 @@ if (isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="header_footer.php">
-    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXVP8RTRY0"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-WXVP8RTRY0'); </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WXVP8RTRY0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-<link rel="stylesheet" href="user-profile-style.php">
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-WXVP8RTRY0');
+    </script>
+
+    <link rel="stylesheet" href="user-profile-style.php">
 
 </head>
 
@@ -233,14 +243,14 @@ if (isset($_POST['submit'])) {
         <h2 id="toggleMenuBtn">&#9776; </h2>
 
         <div class="menu">
-         
+
             <div class="profile-menu">
                 <div class="info">
                     <div class="profile"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="17.5" cy="17.5" r="17" stroke="#222222" />
-                  <path d="M18 19C20.7614 19 23 16.7614 23 14C23 11.2386 20.7614 9 18 9C15.2386 9 13 11.2386 13 14C13 16.7614 15.2386 19 18 19ZM18 19C13.5817 19 10 21.6863 10 25M18 19C22.4183 19 26 21.6863 26 25" stroke="#222222" stroke-width="1.5" stroke-linecap="round" />
-                </svg></div>
-                    <div class="details"> <?= $fetch_user['first_name']; ?>  <?= $fetch_user['last_name']; ?> <br> <?= $fetch_user['email']; ?></div>
+                            <circle cx="17.5" cy="17.5" r="17" stroke="#222222" />
+                            <path d="M18 19C20.7614 19 23 16.7614 23 14C23 11.2386 20.7614 9 18 9C15.2386 9 13 11.2386 13 14C13 16.7614 15.2386 19 18 19ZM18 19C13.5817 19 10 21.6863 10 25M18 19C22.4183 19 26 21.6863 26 25" stroke="#222222" stroke-width="1.5" stroke-linecap="round" />
+                        </svg></div>
+                    <div class="details"> <?= $fetch_user['first_name']; ?> <?= $fetch_user['last_name']; ?> <br> <?= $fetch_user['email']; ?></div>
                 </div>
                 <div class="my-profile">
                     <p>MY PROFILE</p>
@@ -257,7 +267,7 @@ if (isset($_POST['submit'])) {
                 </div>
             </div>
             <div class="log">
-                <p><a href="user_logout.php" class='btn' onclick="return confirm('logout from this website?');">logout</a></p>
+                <a href="user_logout.php" class='btn' onclick="return confirm('logout from this website?');">logout</a>
             </div>
         </div>
         <hr id='hr'>
@@ -268,15 +278,15 @@ if (isset($_POST['submit'])) {
 
 
                 <form action="" method="post">
-                <div class="name">
+                    <div class="name">
                         <div class="first">
                             <label for="first-name">First Name <spam class="red">*</spam></label>
-                            
+
                             <input type="text" name="first_name" maxlength="50" placeholder="<?= $fetch_user['first_name']; ?>" class="form-first-name">
                         </div>
                         <div class="last">
                             <label for="last-name">Last Name <spam class="red">*</spam></label>
-                            <input type="text" name="last_name" maxlength="50" placeholder="<?= $fetch_user['last_name']; ?>"class="form-first-name">
+                            <input type="text" name="last_name" maxlength="50" placeholder="<?= $fetch_user['last_name']; ?>" class="form-first-name">
 
                         </div>
                     </div>
@@ -287,7 +297,7 @@ if (isset($_POST['submit'])) {
 
                         </div>
                         <div class="last">
-                            <label for="last-name">  Phone No <spam class="red">*</spam></label>
+                            <label for="last-name"> Phone No <spam class="red">*</spam></label>
                             <input type="tel" name="number" min="0" max="9999999999" maxlength="10" placeholder="<?= $fetch_user['number']; ?>" class="form-first-name">
 
                         </div>
@@ -300,7 +310,7 @@ if (isset($_POST['submit'])) {
 
                         </div>
                         <div class="last">
-                            <label for="last-name">  New Password <spam class="red">*</spam></label>
+                            <label for="last-name"> New Password <spam class="red">*</spam></label>
                             <input type="password" name="new_pass" maxlength="20" placeholder="Enter your new password" class="form-first-name">
 
 
@@ -314,8 +324,10 @@ if (isset($_POST['submit'])) {
 
 
                         </div>
+                        <br>
                         <div class="last">
-                        <input style="height: 8vh;" type="submit" value="Update Now" name="submit" class="btn">
+                        <label for="first-name"> &nbsp;</label>
+                            <input style="height: auto;" type="submit" value="Update Now" name="submit" class="btn">
 
 
 
@@ -326,7 +338,7 @@ if (isset($_POST['submit'])) {
             </div>
             <div id="listing">
                 <div class="viewlisting">
-                    <p>Edit Profile</p>
+                   
                     <div class="options">
                         <button id="allBtn" class='width' onclick="showDiv('all', 'allBtn')">All</button>
                         <button id="expiredBtn" class='width' onclick="showDiv('expired', 'expiredBtn')">Rejected/Expired</button>
@@ -377,7 +389,19 @@ if (isset($_POST['submit'])) {
                                         <img class="listing-image" src="path/to/default/image.jpg" height="200" alt="Default Image">
                                     <?php endif; ?>
 
-                                    <p class="info"> <?php echo $spaceName; ?></p>
+                                    <p class="info">
+                                        <?php
+                                        // Split the string into words
+                                        $words = explode(' ', $spaceName);
+
+                                        // Extract the first three words
+                                        $firstThreeWords = implode(' ', array_slice($words, 0, 3));
+
+                                        // Output the first three words
+                                        echo $firstThreeWords;
+                                        ?>
+                                    </p>
+
                                     <form action="" method="post" style="    display: flex;
     flex-direction: row;">
                                         <input type="hidden" name="spaceId" value="<?php echo $spaceid; ?>">
@@ -440,7 +464,17 @@ if (isset($_POST['submit'])) {
                                         <img class="listing-image" src="path/to/default/image.jpg" height="200" alt="Default Image">
                                     <?php endif; ?>
 
-                                    <p class="info"> <?php echo $spaceName; ?></p>
+                                    <p class="info">
+                                        <?php
+                                        // Split the string into words
+                                        $words = explode(' ', $spaceName);
+
+                                        // Extract the first three words
+                                        $firstThreeWords = implode(' ', array_slice($words, 0, 3));
+
+                                        // Output the first three words
+                                        echo $firstThreeWords;
+                                        ?>
 
 
                                     <!-- Add a button to view details -->
@@ -500,8 +534,18 @@ if (isset($_POST['submit'])) {
                                     <?php else : ?>
                                         <img class="listing-image" src="path/to/default/image.jpg" height="200" alt="Default Image">
                                     <?php endif; ?>
+                                    <p class="info">
+                                        <?php
+                                        // Split the string into words
+                                        $words = explode(' ', $activeSpaceName);
 
-                                    <p class="info"> <?php echo  $activeSpaceName ?></p>
+                                        // Extract the first three words
+                                        $firstThreeWords = implode(' ', array_slice($words, 0, 3));
+
+                                        // Output the first three words
+                                        echo $firstThreeWords;
+                                        ?>
+                                   
 
 
 
@@ -569,8 +613,18 @@ if (isset($_POST['submit'])) {
                                     <?php else : ?>
                                         <img class="listing-image" src="path/to/default/image.jpg" height="200" alt="Default Image">
                                     <?php endif; ?>
+                                    <p class="info">
+                                        <?php
+                                        // Split the string into words
+                                        $words = explode(' ', $adminSpaceName );
 
-                                    <p class="info"> <?php echo  $adminSpaceName ?></p>
+                                        // Extract the first three words
+                                        $firstThreeWords = implode(' ', array_slice($words, 0, 3));
+
+                                        // Output the first three words
+                                        echo $firstThreeWords;
+                                        ?>
+                                    
 
 
 
@@ -618,61 +672,61 @@ if (isset($_POST['submit'])) {
     <?php include 'footer.php' ?>
 
     <script>
-    function showProfileSection() {
-        document.getElementById('editProfileDiv').style.display = 'block';
-        document.getElementById('listing').style.display = 'none';
+        function showProfileSection() {
+            document.getElementById('editProfileDiv').style.display = 'block';
+            document.getElementById('listing').style.display = 'none';
 
-        // Add 'selected' class to the clicked menu item
-        document.querySelector('.profile-menu .edit').classList.add('selected');
-        document.querySelector('.profile-menu .listing').classList.remove('selected');
+            // Add 'selected' class to the clicked menu item
+            document.querySelector('.profile-menu .edit').classList.add('selected');
+            document.querySelector('.profile-menu .listing').classList.remove('selected');
 
-        // Close menu on smaller devices
-        if (window.innerWidth < 768) {
-            closeMenu();
+            // Close menu on smaller devices
+            if (window.innerWidth < 768) {
+                closeMenu();
+            }
         }
-    }
 
-    function showListingSection() {
-        document.getElementById('editProfileDiv').style.display = 'none';
-        document.getElementById('listing').style.display = 'block';
+        function showListingSection() {
+            document.getElementById('editProfileDiv').style.display = 'none';
+            document.getElementById('listing').style.display = 'block';
 
-        // Add 'selected' class to the clicked menu item
-        document.querySelector('.profile-menu .listing').classList.add('selected');
-        document.querySelector('.profile-menu .edit').classList.remove('selected');
+            // Add 'selected' class to the clicked menu item
+            document.querySelector('.profile-menu .listing').classList.add('selected');
+            document.querySelector('.profile-menu .edit').classList.remove('selected');
 
-        // Close menu on smaller devices
-        if (window.innerWidth < 768) {
-            closeMenu();
+            // Close menu on smaller devices
+            if (window.innerWidth < 768) {
+                closeMenu();
+            }
         }
-    }
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const menu = document.querySelector('.menu');
-        const toggleMenuBtn = document.getElementById('toggleMenuBtn');
-        const closeMenuBtn = document.getElementById('closeMenuBtn');
+        document.addEventListener("DOMContentLoaded", function() {
+            const menu = document.querySelector('.menu');
+            const toggleMenuBtn = document.getElementById('toggleMenuBtn');
+            const closeMenuBtn = document.getElementById('closeMenuBtn');
 
-        toggleMenuBtn.addEventListener('click', function () {
-            menu.style.display = (menu.style.display === 'none') ? 'block' : 'none';
-            updateCloseButtonVisibility();
+            toggleMenuBtn.addEventListener('click', function() {
+                menu.style.display = (menu.style.display === 'none') ? 'block' : 'none';
+                updateCloseButtonVisibility();
+            });
+
+            function updateCloseButtonVisibility() {
+                closeMenuBtn.style.display = (menu.style.display === 'none') ? 'block' : 'none';
+            }
+
+            // Close menu by default on larger screens
+            if (window.innerWidth <= 768) {
+                closeMenu();
+            }
         });
 
-        function updateCloseButtonVisibility() {
-            closeMenuBtn.style.display = (menu.style.display === 'none') ? 'block' : 'none';
+        function closeMenu() {
+            const menu = document.querySelector('.menu');
+            const closeMenuBtn = document.getElementById('closeMenuBtn');
+            menu.style.display = 'none';
+            closeMenuBtn.style.display = 'none';
         }
-
-        // Close menu by default on larger screens
-        if (window.innerWidth <= 768) {
-            closeMenu();
-        }
-    });
-
-    function closeMenu() {
-        const menu = document.querySelector('.menu');
-        const closeMenuBtn = document.getElementById('closeMenuBtn');
-        menu.style.display = 'none';
-        closeMenuBtn.style.display = 'none';
-    }
-</script>
+    </script>
 
 
     <script>
@@ -683,9 +737,9 @@ if (isset($_POST['submit'])) {
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
-<?php include 'message.php' ?>
+    <?php include 'message.php' ?>
 </body>
 
 </html>

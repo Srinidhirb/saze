@@ -142,6 +142,7 @@ $color = 'blue';
         #editProfileDiv form {
 
             display: flex;
+            margin:0;
 
         }
 
@@ -159,6 +160,7 @@ $color = 'blue';
         #viewlisting {
             width: 100%;
             padding: 40px;
+         
         }
 
         #listing {
@@ -190,6 +192,7 @@ $color = 'blue';
             flex-direction: row;
 
         }
+      
 
         label {
             display: block;
@@ -253,6 +256,10 @@ $color = 'blue';
         .features{
             width:70%;
         }
+        #editProfileDiv {
+            width: 100%;
+            padding:0px!important;
+        }
 
             
         }
@@ -298,7 +305,10 @@ $color = 'blue';
 
         .options {
 
-            display: inline-flex;
+              display:flex;
+            justify-content: center;
+            align-items:center;
+           flex-wrap:wrap;
             align-items: center;
             gap: 20px;
         }
@@ -346,9 +356,7 @@ $color = 'blue';
         }
 
         @media screen and (max-width: 768px) {
-            .options {
-                flex-direction: column;
-            }
+            
 
             .width {
                 width: 100%;
@@ -385,7 +393,8 @@ $color = 'blue';
         .active,
         .pending {
             width: 100%;
-            margin-bottom: 20px;
+            padding: 30px 0 0 0;
+           
         }
 
         .listing-container {
@@ -393,6 +402,7 @@ $color = 'blue';
             cursor: pointer;
             background-color: #fff;
             padding: 20px;
+          width:max-content;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-right: 20px;
