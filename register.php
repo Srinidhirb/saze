@@ -230,14 +230,14 @@ width: 15px; height:15px;
          <label for="pass">Password:<span class="red">*</span></label>
          <div class="custom-password-group">
             <input type="password" id="pass" class="box" name="pass" required maxlength="20" placeholder="Enter Password">
-            <i class="fas fa-eye custom-eye-icon" onclick="togglePasswordVisibility('pass')"></i>
+            <i class="fas fa-eye-slash custom-eye-icon" onclick="togglePasswordVisibility('pass')"></i>
 
          </div>
 
          <label for="c_pass">Confirm Password:<span class="red">*</span></label>
          <div class="custom-password-group">
             <input type="password" id="c_pass" class="box" name="c_pass" required maxlength="20" placeholder="Enter Password">
-            <i class="fas fa-eye custom-eye-icon" onclick="togglePasswordVisibility('c_pass')"></i>
+            <i class="fas fa-eye-slash custom-eye-icon" onclick="togglePasswordVisibility('c_pass')"></i>
          </div>
          <p  id="password-error" class="password-error"></p>
          <div>
@@ -283,12 +283,12 @@ width: 15px; height:15px;
 
       if (passwordInput.type === "password") {
          passwordInput.type = "text";
-         eyeIcon.classList.remove("fa-eye");
-         eyeIcon.classList.add("fa-eye-slash");
-      } else {
-         passwordInput.type = "password";
          eyeIcon.classList.remove("fa-eye-slash");
          eyeIcon.classList.add("fa-eye");
+      } else {
+         passwordInput.type = "password";
+         eyeIcon.classList.remove("fa-eye");
+         eyeIcon.classList.add("fa-eye-slash");
       }
    }
 </script>
