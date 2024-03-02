@@ -128,14 +128,15 @@ if (isset($_POST['submit'])) {
 
       .p {
 
+         text-align: center;
          margin-top: 10px;
-         color: #333;
+         color: var(--Brand-color, #031B64);
 font-family: Lato;
 font-size: 16px;
 font-style: normal;
-font-weight: 400;
+font-weight: 600;
 line-height: normal;
-letter-spacing: 0.36px;
+letter-spacing: 0.359px;
       }
       .p1 {
 text-align: left;
@@ -211,9 +212,7 @@ letter-spacing: 0.36px;
       .red {
          color: red;
       }
-      .hover:hover{
-         color: red;
-      }
+      
    </style>
    <link rel="stylesheet" href="header_footer.php">
 </head>
@@ -238,14 +237,14 @@ letter-spacing: 0.36px;
          </div>
          <div class="form" >
           
-            <a href="forgot.php" style="text-align: end;">
+            <!-- <a href="forgot.php" style="text-align: end;">
                <a href="forgot.php"><p class="p hover"  >Forgot a password?</p></a>
-            </a>
+            </a> -->
             <p class="p1">Mandatory Field are marked with <spam class="red">*</spam></p>
          </div>
          
          <input type="submit" value="login now" name="submit" class="btn">
-         <p class="p">don't have an account? <a href="register.php" class="hover" >register new</a></p>
+         <p class="p">don't have an account? <a href="register.php" class="hover" >Register new</a></p>
       </form>
 
    </section>

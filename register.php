@@ -199,9 +199,7 @@ line-height: normal;
 letter-spacing: 0.359px;
 width: 15px; height:15px;
       }
-      .hover:hover{
-         color: red;
-      }
+      
    </style>
 </head>
 
