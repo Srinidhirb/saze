@@ -233,12 +233,13 @@ if (isset($_POST['submit'])) {
         <h2 id="toggleMenuBtn">&#9776; </h2>
 
         <div class="menu">
-            <span class="close-btn" id="closeMenuBtn">&times;</span>
+         
             <div class="profile-menu">
                 <div class="info">
-                    <div class="profile"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                            <path d="M12.5 13C15.2614 13 17.5 10.7614 17.5 8C17.5 5.23858 15.2614 3 12.5 3C9.73858 3 7.5 5.23858 7.5 8C7.5 10.7614 9.73858 13 12.5 13ZM12.5 13C8.08172 13 4.5 15.6863 4.5 19M12.5 13C16.9183 13 20.5 15.6863 20.5 19" stroke="#989797" stroke-width="1.5" stroke-linecap="round" />
-                        </svg></div>
+                    <div class="profile"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="17.5" cy="17.5" r="17" stroke="#222222" />
+                  <path d="M18 19C20.7614 19 23 16.7614 23 14C23 11.2386 20.7614 9 18 9C15.2386 9 13 11.2386 13 14C13 16.7614 15.2386 19 18 19ZM18 19C13.5817 19 10 21.6863 10 25M18 19C22.4183 19 26 21.6863 26 25" stroke="#222222" stroke-width="1.5" stroke-linecap="round" />
+                </svg></div>
                     <div class="details"> <?= $fetch_user['first_name']; ?>  <?= $fetch_user['last_name']; ?> <br> <?= $fetch_user['email']; ?></div>
                 </div>
                 <div class="my-profile">
@@ -616,78 +617,63 @@ if (isset($_POST['submit'])) {
     </div>
     <?php include 'footer.php' ?>
 
-    <!-- Add this script at the end of your body tag or in an external JS file -->
     <script>
-        function showProfileSection() {
-            closeMenu(); // Close the menu if open
-            document.getElementById('editProfileDiv').style.display = 'block';
-            document.getElementById('listing').style.display = 'none';
+    function showProfileSection() {
+        document.getElementById('editProfileDiv').style.display = 'block';
+        document.getElementById('listing').style.display = 'none';
 
-            // Add 'selected' class to the clicked menu item
-            document.querySelector('.profile-menu .edit').classList.add('selected');
-            document.querySelector('.profile-menu .listing').classList.remove('selected');
+        // Add 'selected' class to the clicked menu item
+        document.querySelector('.profile-menu .edit').classList.add('selected');
+        document.querySelector('.profile-menu .listing').classList.remove('selected');
+
+        // Close menu on smaller devices
+        if (window.innerWidth < 768) {
+            closeMenu();
         }
+    }
 
-        function showProfileSection() {
-            closeMenu(); // Close the menu if open
-            document.getElementById('editProfileDiv').style.display = 'block';
-            document.getElementById('listing').style.display = 'none';
+    function showListingSection() {
+        document.getElementById('editProfileDiv').style.display = 'none';
+        document.getElementById('listing').style.display = 'block';
 
-            // Add 'selected' class to the clicked menu item
-            document.querySelector('.profile-menu .edit').classList.add('selected');
-            document.querySelector('.profile-menu .listing').classList.remove('selected');
+        // Add 'selected' class to the clicked menu item
+        document.querySelector('.profile-menu .listing').classList.add('selected');
+        document.querySelector('.profile-menu .edit').classList.remove('selected');
 
-            // Hide the hr element
-            document.querySelector('#hr').style.display = 'none';
+        // Close menu on smaller devices
+        if (window.innerWidth < 768) {
+            closeMenu();
         }
+    }
 
-        function showListingSection() {
-            closeMenu(); // Close the menu if open
-            document.getElementById('editProfileDiv').style.display = 'none';
-            document.getElementById('listing').style.display = 'block';
+    document.addEventListener("DOMContentLoaded", function () {
+        const menu = document.querySelector('.menu');
+        const toggleMenuBtn = document.getElementById('toggleMenuBtn');
+        const closeMenuBtn = document.getElementById('closeMenuBtn');
 
-            // Add 'selected' class to the clicked menu item
-            document.querySelector('.profile-menu .listing').classList.add('selected');
-            document.querySelector('.profile-menu .edit').classList.remove('selected');
-
-            // Hide the hr element
-            document.querySelector('#hr').style.display = 'none';
-        }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            const menu = document.querySelector('.menu');
-            const hr = document.querySelector('#hr');
-            const toggleMenuBtn = document.getElementById('toggleMenuBtn');
-            const closeMenuBtn = document.getElementById('closeMenuBtn');
-
-            toggleMenuBtn.addEventListener('click', function() {
-                menu.style.display = (menu.style.display === 'none') ? 'block' : 'none';
-                hr.style.display = (hr.style.display === 'none') ? 'block' : 'none';
-                updateCloseButtonVisibility();
-            });
-
-            function updateCloseButtonVisibility() {
-                closeMenuBtn.style.display = (menu.style.display === 'none') ? 'block' : 'none';
-            }
-
-            // Close menu by default
-            toggleMenu();
+        toggleMenuBtn.addEventListener('click', function () {
+            menu.style.display = (menu.style.display === 'none') ? 'block' : 'none';
+            updateCloseButtonVisibility();
         });
 
-        function toggleMenu() {
-            const menu = document.querySelector('.menu');
-            const closeMenuBtn = document.getElementById('closeMenuBtn');
-            menu.style.display = 'block';
-            closeMenuBtn.style.display = 'none';
+        function updateCloseButtonVisibility() {
+            closeMenuBtn.style.display = (menu.style.display === 'none') ? 'block' : 'none';
         }
 
-        function closeMenu() {
-            const menu = document.querySelector('.menu');
-            const closeMenuBtn = document.getElementById('closeMenuBtn');
-            menu.style.display = 'none';
-            closeMenuBtn.style.display = 'none';
+        // Close menu by default on larger screens
+        if (window.innerWidth <= 768) {
+            closeMenu();
         }
-    </script>
+    });
+
+    function closeMenu() {
+        const menu = document.querySelector('.menu');
+        const closeMenuBtn = document.getElementById('closeMenuBtn');
+        menu.style.display = 'none';
+        closeMenuBtn.style.display = 'none';
+    }
+</script>
+
 
     <script>
         function submitForm(spaceId) {

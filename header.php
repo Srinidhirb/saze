@@ -21,7 +21,7 @@
           </li>
           <?php if ($user_id != '') { ?>
             <li class="nav__item dropdown" style="margin-top: 2%;">
-              <a href="#" class="nav__link"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a href="user-profile.php" class="nav__link"><svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="17.5" cy="17.5" r="17" stroke="#222222" />
                   <path d="M18 19C20.7614 19 23 16.7614 23 14C23 11.2386 20.7614 9 18 9C15.2386 9 13 11.2386 13 14C13 16.7614 15.2386 19 18 19ZM18 19C13.5817 19 10 21.6863 10 25M18 19C22.4183 19 26 21.6863 26 25" stroke="#222222" stroke-width="1.5" stroke-linecap="round" />
                 </svg>

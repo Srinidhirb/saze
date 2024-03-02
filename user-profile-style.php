@@ -103,9 +103,8 @@ $color = 'blue';
             gap: 10px;
         }
 
-        svg {
-            border: 2px solid;
-            border-radius: 50%;
+        #toggleMenuBtn{
+            display:none;
         }
 
         .log p {
@@ -182,11 +181,11 @@ $color = 'blue';
         form {
             display: flex;
             flex-direction: column;
-            margin: 20px;
+           
         }
 
         .name {
-            width: 60%;
+            width: 100%;
             display: flex;
             flex-direction: row;
 
@@ -240,14 +239,25 @@ $color = 'blue';
                 background-color: #fff;
                 /* Change background color as needed */
                 z-index: 1;
+                height:900px;
+                width:62%;
             }
-
-            #hr {
-                display: block;
-            }
+            #toggleMenuBtn{
+            display:block;
+        }
+        #hr {
+            padding: 0;
+            margin: 0%;
+            display: none;
+        }
+        .features{
+            width:70%;
         }
 
-        @media screen and (max-width: 768px) {
+            
+        }
+
+        @media screen and (max-width: 968px) {
             form {
                 width: 100%;
             }
