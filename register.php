@@ -224,7 +224,7 @@ width: 15px; height:15px;
 
          <label for="number">Phone Number:<span class="red">*</span></label>
          <!--<input type="number" id="number" name="number" required min="0" max="9999999999" maxlength="10" placeholder="Enter your number" class="box">-->
-         <input type="text" id="number" name="number" required min="0" max="9999999999" maxlength="10" placeholder="Enter your number" class="box" inputmode="numeric" style="-moz-appearance: textfield;">
+         <input type="text" id="number" name="number" required min="0" max="9999999999" maxlength="10" placeholder="Enter your number" class="box" inputmode="numeric" >
 
 
          <label for="pass">Password:<span class="red">*</span></label>
