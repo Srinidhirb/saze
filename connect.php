@@ -18,11 +18,9 @@
             return $randomString;
         }
     }
-    ?>
 
-<?php
-//
-/*
+    //
+    /*
 $hostname = 'localhost:3306';
 $username = 'sazeabsolute';
 $password = 'sazeabsolute';
@@ -45,4 +43,4 @@ if (!function_exists('create_unique_id')) {
     }
 }
 */
-?>
+    ?>
