@@ -144,7 +144,7 @@ if ($conn) {
                 // Display images without slider
                 $imagePaths = explode(',', $row['images']);
                 foreach ($imagePaths as $imagePath) {
-                    $imageSrc = "http://spacekraft.in/{$imagePath}";
+                    $imageSrc = "http://localhost/saze/{$imagePath}";
                     echo "<img src='{$imageSrc}' alt='Space Image' style='max-width: 100px; max-height: 100px;'>";
                     echo "<br>";
                     echo "Image Source: {$imageSrc}";
