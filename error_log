@@ -1,0 +1,196 @@
+[26-Feb-2024 06:35:06 UTC] PHP Warning:  copy(path/to/Kiosk.svg): failed to open stream: No such file or directory in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step2.php on line 90
+[26-Feb-2024 06:35:06 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step2.php on line 109
+[26-Feb-2024 06:35:06 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step2.php on line 110
+[26-Feb-2024 06:35:24 UTC] PHP Notice:  Undefined index: max_duration_unit in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step4.php on line 36
+[26-Feb-2024 09:41:56 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step2.php on line 109
+[26-Feb-2024 09:41:56 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step2.php on line 110
+[26-Feb-2024 09:47:12 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step2.php on line 109
+[26-Feb-2024 09:47:12 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step2.php on line 110
+[26-Feb-2024 09:47:56 UTC] PHP Notice:  Undefined index: max_duration_unit in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step4.php on line 36
+[26-Feb-2024 09:50:54 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/user-profile.php on line 887
+[26-Feb-2024 09:50:54 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/user-profile.php on line 888
+[26-Feb-2024 09:50:54 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/user-profile.php on line 889
+[26-Feb-2024 09:51:02 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/user-profile.php on line 887
+[26-Feb-2024 09:51:02 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/user-profile.php on line 888
+[26-Feb-2024 09:51:02 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/user-profile.php on line 889
+[26-Feb-2024 10:06:32 UTC] PHP Warning:  copy(path/to/lifestyle.svg): failed to open stream: No such file or directory in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step2.php on line 90
+[26-Feb-2024 10:06:32 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step2.php on line 109
+[26-Feb-2024 10:06:32 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step2.php on line 110
+[27-Feb-2024 11:07:20 UTC] PHP Warning:  copy(path/to/Restaurant.svg): failed to open stream: No such file or directory in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step2.php on line 90
+[27-Feb-2024 11:07:20 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step2.php on line 109
+[27-Feb-2024 11:07:20 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step2.php on line 110
+[27-Feb-2024 11:09:57 UTC] PHP Warning:  copy(path/to/Restaurant.svg): failed to open stream: No such file or directory in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step2.php on line 90
+[27-Feb-2024 11:09:57 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step2.php on line 109
+[27-Feb-2024 11:09:57 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/staging.spacekraft.in/step2.php on line 110
+[29-Feb-2024 11:43:41 UTC] PHP Warning:  copy(path/to/Kiosk.svg): failed to open stream: No such file or directory in /home/j1xv2lfj9qng/public_html/step2.php on line 90
+[29-Feb-2024 11:43:41 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/step2.php on line 109
+[29-Feb-2024 11:43:41 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/step2.php on line 110
+[29-Feb-2024 11:44:13 UTC] PHP Warning:  copy(path/to/Kiosk.svg): failed to open stream: No such file or directory in /home/j1xv2lfj9qng/public_html/step2.php on line 90
+[29-Feb-2024 11:44:13 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/step2.php on line 109
+[29-Feb-2024 11:44:13 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/step2.php on line 110
+[29-Feb-2024 11:45:34 UTC] PHP Notice:  Undefined index: min_duration_unit in /home/j1xv2lfj9qng/public_html/step4.php on line 32
+[29-Feb-2024 11:45:34 UTC] PHP Notice:  Undefined index: max_duration_unit in /home/j1xv2lfj9qng/public_html/step4.php on line 36
+[29-Feb-2024 11:47:24 UTC] PHP Warning:  move_uploaded_file(uploaded_img/65e06ecca3b8a_Frame 95.png): failed to open stream: Permission denied in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[29-Feb-2024 11:47:24 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpcLqj3Q' to 'uploaded_img/65e06ecca3b8a_Frame 95.png' in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[29-Feb-2024 11:47:44 UTC] PHP Warning:  move_uploaded_file(uploaded_img/65e06ee0507a7_Frame 95.png): failed to open stream: Permission denied in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[29-Feb-2024 11:47:44 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php7zyutF' to 'uploaded_img/65e06ee0507a7_Frame 95.png' in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[29-Feb-2024 11:47:52 UTC] PHP Warning:  move_uploaded_file(uploaded_img/65e06ee8959ab_Frame 95.png): failed to open stream: Permission denied in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[29-Feb-2024 11:47:52 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpomISI0' to 'uploaded_img/65e06ee8959ab_Frame 95.png' in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[29-Feb-2024 11:48:00 UTC] PHP Warning:  move_uploaded_file(uploaded_img/65e06ef07ee86_Frame 95.png): failed to open stream: Permission denied in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[29-Feb-2024 11:48:00 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpgjNg0k' to 'uploaded_img/65e06ef07ee86_Frame 95.png' in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[29-Feb-2024 11:48:08 UTC] PHP Warning:  move_uploaded_file(uploaded_img/65e06ef8c9c59_Frame 95.png): failed to open stream: Permission denied in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[29-Feb-2024 11:48:08 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php541ojG' to 'uploaded_img/65e06ef8c9c59_Frame 95.png' in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[29-Feb-2024 11:50:02 UTC] PHP Warning:  copy(path/to/Banquet.svg): failed to open stream: No such file or directory in /home/j1xv2lfj9qng/public_html/step2.php on line 90
+[29-Feb-2024 11:50:02 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/step2.php on line 109
+[29-Feb-2024 11:50:02 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/step2.php on line 110
+[29-Feb-2024 11:50:15 UTC] PHP Notice:  Undefined index: min_duration_unit in /home/j1xv2lfj9qng/public_html/step4.php on line 32
+[29-Feb-2024 11:50:15 UTC] PHP Notice:  Undefined index: max_duration_unit in /home/j1xv2lfj9qng/public_html/step4.php on line 36
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 887
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 888
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 889
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 887
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 888
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 889
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 887
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 888
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 889
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 887
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 888
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 889
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 887
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 888
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 889
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 887
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 888
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 889
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 887
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 888
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 889
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 887
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 888
+[29-Feb-2024 11:56:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 889
+[01-Mar-2024 04:59:02 UTC] PHP Warning:  copy(path/to/Restaurant.svg): failed to open stream: No such file or directory in /home/j1xv2lfj9qng/public_html/step2.php on line 90
+[01-Mar-2024 04:59:02 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/step2.php on line 109
+[01-Mar-2024 04:59:02 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/step2.php on line 110
+[01-Mar-2024 04:59:21 UTC] PHP Notice:  Undefined index: min_duration_unit in /home/j1xv2lfj9qng/public_html/step4.php on line 32
+[01-Mar-2024 04:59:21 UTC] PHP Notice:  Undefined index: max_duration_unit in /home/j1xv2lfj9qng/public_html/step4.php on line 36
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Undefined variable: spaceid in /home/j1xv2lfj9qng/public_html/user-profile.php on line 977
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Undefined variable: spaceid in /home/j1xv2lfj9qng/public_html/user-profile.php on line 977
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 05:06:33 UTC] PHP Notice:  Undefined variable: spaceid in /home/j1xv2lfj9qng/public_html/user-profile.php on line 977
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Undefined variable: spaceid in /home/j1xv2lfj9qng/public_html/user-profile.php on line 977
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Undefined variable: spaceid in /home/j1xv2lfj9qng/public_html/user-profile.php on line 977
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 05:10:08 UTC] PHP Notice:  Undefined variable: spaceid in /home/j1xv2lfj9qng/public_html/user-profile.php on line 977
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Undefined variable: spaceid in /home/j1xv2lfj9qng/public_html/user-profile.php on line 977
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Undefined variable: spaceid in /home/j1xv2lfj9qng/public_html/user-profile.php on line 977
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 956
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 957
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 958
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Undefined variable: row in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 975
+[01-Mar-2024 06:06:07 UTC] PHP Notice:  Undefined variable: spaceid in /home/j1xv2lfj9qng/public_html/user-profile.php on line 977
+[01-Mar-2024 06:14:13 UTC] PHP Warning:  move_uploaded_file(uploaded_img/65e17235c9480_Naari kala.jpeg): failed to open stream: Permission denied in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[01-Mar-2024 06:14:13 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php8kJ0gO' to 'uploaded_img/65e17235c9480_Naari kala.jpeg' in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[01-Mar-2024 06:21:32 UTC] PHP Warning:  move_uploaded_file(uploaded_img/65e173ec75145_Naari kala3.jpeg): failed to open stream: Permission denied in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[01-Mar-2024 06:21:32 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpa52ysX' to 'uploaded_img/65e173ec75145_Naari kala3.jpeg' in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[01-Mar-2024 06:34:07 UTC] PHP Warning:  move_uploaded_file(uploaded_img/65e176dfefa17_Naari kala.jpeg): failed to open stream: Permission denied in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[01-Mar-2024 06:34:07 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpwZXgnd' to 'uploaded_img/65e176dfefa17_Naari kala.jpeg' in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[01-Mar-2024 06:34:55 UTC] PHP Warning:  move_uploaded_file(uploaded_img/65e1770f88607_attendence.jpg): failed to open stream: Permission denied in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[01-Mar-2024 06:34:55 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phplnVQpb' to 'uploaded_img/65e1770f88607_attendence.jpg' in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[01-Mar-2024 06:36:21 UTC] PHP Warning:  move_uploaded_file(uploaded_img/65e17765217d4_Naari kala.jpeg): failed to open stream: Permission denied in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[01-Mar-2024 06:36:21 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpmyDVVI' to 'uploaded_img/65e17765217d4_Naari kala.jpeg' in /home/j1xv2lfj9qng/public_html/step2.php on line 32
+[01-Mar-2024 06:40:35 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/step2.php on line 109
+[01-Mar-2024 06:40:35 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/step2.php on line 110
+[01-Mar-2024 06:42:07 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/step2.php on line 109
+[01-Mar-2024 06:42:07 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/step2.php on line 110
+[01-Mar-2024 06:53:07 UTC] PHP Notice:  Undefined index: max_duration_unit in /home/j1xv2lfj9qng/public_html/step4.php on line 36
+[01-Mar-2024 07:00:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 887
+[01-Mar-2024 07:00:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 888
+[01-Mar-2024 07:00:14 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 889
+[01-Mar-2024 07:00:39 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 887
+[01-Mar-2024 07:00:39 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 888
+[01-Mar-2024 07:00:39 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/j1xv2lfj9qng/public_html/user-profile.php on line 889
+[01-Mar-2024 07:36:42 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/step2.php on line 114
+[01-Mar-2024 07:36:42 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/step2.php on line 115
+[01-Mar-2024 07:40:42 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/step2.php on line 109
+[01-Mar-2024 07:40:42 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/step2.php on line 110
+[01-Mar-2024 07:41:00 UTC] PHP Notice:  Undefined index: spaceName in /home/j1xv2lfj9qng/public_html/step2.php on line 103
+[01-Mar-2024 07:41:00 UTC] PHP Notice:  Undefined index: spaceType in /home/j1xv2lfj9qng/public_html/step2.php on line 104
+[01-Mar-2024 07:41:00 UTC] PHP Notice:  Undefined index: spaceAddress1 in /home/j1xv2lfj9qng/public_html/step2.php on line 105
+[01-Mar-2024 07:41:00 UTC] PHP Notice:  Undefined index: spaceAddress2 in /home/j1xv2lfj9qng/public_html/step2.php on line 106
+[01-Mar-2024 07:41:00 UTC] PHP Notice:  Undefined index: city in /home/j1xv2lfj9qng/public_html/step2.php on line 107
+[01-Mar-2024 07:41:00 UTC] PHP Notice:  Undefined index: pinCode in /home/j1xv2lfj9qng/public_html/step2.php on line 108
+[01-Mar-2024 07:41:00 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/step2.php on line 109
+[01-Mar-2024 07:41:00 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/step2.php on line 110
+[01-Mar-2024 09:14:18 UTC] PHP Warning:  copy(path/to/Kiosk.svg): failed to open stream: No such file or directory in /home/j1xv2lfj9qng/public_html/step2.php on line 90
+[01-Mar-2024 09:14:18 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/step2.php on line 109
+[01-Mar-2024 09:14:18 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/step2.php on line 110
+[01-Mar-2024 11:28:30 UTC] PHP Warning:  copy(path/to/Kiosk.svg): failed to open stream: No such file or directory in /home/j1xv2lfj9qng/public_html/step2.php on line 90
+[01-Mar-2024 11:28:30 UTC] PHP Notice:  Undefined index: avail in /home/j1xv2lfj9qng/public_html/step2.php on line 109
+[01-Mar-2024 11:28:30 UTC] PHP Notice:  Undefined index: avail_time in /home/j1xv2lfj9qng/public_html/step2.php on line 110
