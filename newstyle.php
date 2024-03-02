@@ -415,7 +415,7 @@ box-sizing: border-box;
 display: flex;
 align-items: center;
 justify-content: center;
-min-height: 50vh;
+
 }
 
 .wrapper {
@@ -532,9 +532,7 @@ line-height: normal;
 grid-auto-columns: calc((100% / 3) - 9px);
 }
 
-.city {
-min-height: 41vh;
-}
+
 .carousel .card{
 width:100%;
 height: 35vh;

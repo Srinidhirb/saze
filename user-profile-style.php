@@ -55,7 +55,7 @@ $color = 'blue';
         }
 
         .my-profile p {
-            color: var(--Text-title, #989797);
+            color: var(--Text-title, #222222);
             font-family: Lato;
             font-size: 16px;
             font-style: normal;
@@ -75,7 +75,7 @@ $color = 'blue';
         }
 
         .edit p {
-            color: var(--Text-title, #989797);
+            color: var(--Text-title, #222222);
             font-family: Lato;
             font-size: 16px;
             font-style: normal;
@@ -85,7 +85,7 @@ $color = 'blue';
         }
 
         .listing p {
-            color: var(--Text-body-1, #A4A3A3);
+            color: var(--Text-body-1, #222222);
             font-family: Lato;
             font-size: 16px;
             font-style: normal;
