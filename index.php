@@ -112,7 +112,7 @@ if (isset($_GET['City'])) {
     </div>
     <div class="search">
       <div class="search-container">
-        <select class="search-input custom-dropdown" id="locationInput" name="locationInput">
+      <select class="search-input custom-dropdown" id="locationInput" name="locationInput">
           <option value="">Locations</option>
 
           <?php
