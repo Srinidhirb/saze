@@ -1,6 +1,5 @@
 <<?php
- //
-    /*
+
     // Connect to the database
     $conn = new mysqli('localhost', 'root', '', 'saze');
 
@@ -20,7 +19,6 @@
             return $randomString;
         }
     }
-    */
 
    
 $hostname = 'localhost:3306';
@@ -30,7 +28,8 @@ $database = 'saze';
 
 $conn = new mysqli($hostname, $username, $password, $database);
 
-
+// Check if the function is already defined before declaring it
+/*
 if (!function_exists('create_unique_id')) {
     function create_unique_id()
     {
@@ -43,5 +42,5 @@ if (!function_exists('create_unique_id')) {
         return $randomString;
     }
 }
-
+*/
     ?>
