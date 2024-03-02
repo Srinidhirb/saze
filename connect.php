@@ -1,5 +1,4 @@
 <<?php
-
     // Connect to the database
     $conn = new mysqli('localhost', 'root', '', 'saze');
 
@@ -20,7 +19,8 @@
         }
     }
 
-   
+    //
+    /*
 $hostname = 'localhost:3306';
 $username = 'sazeabsolute';
 $password = 'sazeabsolute';
