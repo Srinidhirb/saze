@@ -80,6 +80,11 @@ line-height: normal;
     padding-bottom: 0;
    
   }
+  @media (max-width: 947px) {
+    .bottom-bar {
+      padding: 3px;
+    }
+  }
   
   .bottom-bar__content {
     height: 80px;
