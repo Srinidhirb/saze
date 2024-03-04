@@ -263,7 +263,7 @@ font-size: 16px;
   top: 100%;
  right:0;
   width:100px!important;
-  height:96px;
+  height:106px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px ;
@@ -272,7 +272,7 @@ font-size: 16px;
 }
 .dropdown-menu hr{
   margin:10px 0;
-  width:100%;
+  width:92%;
 }
 
 .dropdown:hover .dropdown-menu {
