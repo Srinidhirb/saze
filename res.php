@@ -183,7 +183,7 @@
 
         }
 
-        hr {
+        .hr {
             margin: 10px;
             height: 363.5px;
 
@@ -313,7 +313,7 @@
                 max-width: 260px;
             }
 
-            hr {
+            .hr {
                 display: none;
             }
 
@@ -392,7 +392,7 @@
                     </a>
                 </ul>
             </div>
-            <hr>
+            <hr class="hr" >
             <div id="card">
                 <a href="blog2.php">
                     <div class="card">
