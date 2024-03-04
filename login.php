@@ -233,7 +233,7 @@ letter-spacing: 0.36px;
          <label for="pass">Password <spam class="red">*</spam></label>
          <div class="custom-password-group">
             <input type="password" id="custom-password" class="box" name="pass" required maxlength="20" placeholder="Enter Password">
-            <i class="fas fa-eye custom-eye-icon" onclick="togglePasswordVisibility('custom-password')"></i>
+            <i class="fas fa-eye-slash custom-eye-icon" onclick="togglePasswordVisibility('custom-password')"></i>
          </div>
          <div class="form" >
           
@@ -268,12 +268,12 @@ letter-spacing: 0.36px;
 
          if (passwordInput.type === "password") {
             passwordInput.type = "text";
-            eyeIcon.classList.remove("fa-eye");
-            eyeIcon.classList.add("fa-eye-slash");
-         } else {
-            passwordInput.type = "password";
             eyeIcon.classList.remove("fa-eye-slash");
             eyeIcon.classList.add("fa-eye");
+         } else {
+            passwordInput.type = "password";
+            eyeIcon.classList.remove("fa-eye");
+            eyeIcon.classList.add("fa-eye-slash");
          }
       }
    </script>
