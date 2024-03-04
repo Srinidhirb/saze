@@ -81,10 +81,12 @@ $color = 'blue';
             font-style: normal;
             font-weight: 400;
             line-height: 140%;
+            cursor:pointer;
             /* 22.4px */
         }
 
         .listing p {
+            cursor:pointer;
             color: var(--Text-body-1, #222222);
             font-family: Lato;
             font-size: 16px;
@@ -99,7 +101,8 @@ $color = 'blue';
             padding: 80px;
             padding-bottom: 0;
             flex-direction: column;
-            align-items: flex-start;
+         
+            justify-content:center;
             gap: 10px;
         }
 
