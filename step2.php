@@ -190,6 +190,7 @@
 
 
             </div>
+            <div class="heading-small">Space showcase</div>
             <form action="" method="post" enctype="multipart/form-data">
                 <label for="space_area">Space Area <span class="red">*</span> (in Sq.ft)</label>
 

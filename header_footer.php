@@ -4,6 +4,9 @@ header("Content-type: text/css"); // Set the content type as CSS
 // PHP code to generate dynamic CSS properties
 $color = 'blue';
 ?>
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap') format('woff2'); /* WOFF2 format */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap') format('woff'); /* WOFF format */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap') format('truetype'); /* TTF format */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 .nav__link.active1 {
       color: #031B64!important;

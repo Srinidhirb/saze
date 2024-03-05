@@ -243,7 +243,8 @@ line-height: 22px; /* 122.222% */
 
 .button-container {
   display: flex;
-  margin-left: 11%;
+  justify-content: right;
+    width: 73%;
   margin-top: 34px;
 }
 
@@ -283,7 +284,8 @@ line-height: 22px; /* 122.222% */
   background-color: #e9e8e8;
 }
 .next-btn:hover{
- background-color: #7CAFD5;
+ background-color: #4AE9E9;
+ color:#222222
  }
 .red {
   color: red;
@@ -423,7 +425,7 @@ line-height: 22px; /* 129.412% */
 }
 
 .amenity-label:hover {
-    background-color: #EEEDED;
+    background-color: #4AE9E9;
     color: #000000;
 }
 .amenity-label {
@@ -501,4 +503,18 @@ font-size: 17px;
 font-style: normal;
 font-weight: 400;
 line-height: 20.4px; /* 120% */
+}
+
+.heading-small{
+  padding:56px 0px 30px 0px ;
+  text-align:center;
+  font-family: Lato;
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 0em;
+color: #989797;
+
+
+
 }

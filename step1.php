@@ -120,6 +120,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
            
 
         </div>
+        <div class="heading-small">Space Details</div>
 
         <form action="" method="post">
           <label for="space_name">Space Name <span class="red">*</span></label>

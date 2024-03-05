@@ -196,7 +196,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
         </div>
-
+        <div class="heading-small">Space pricing</div>
         <form action="" method="post" id="list2" onsubmit="return validateDurationSelection();">
             <!-- List2 Form -->
             <!-- ... (your existing List2 Form content) ... -->

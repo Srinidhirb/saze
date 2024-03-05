@@ -115,7 +115,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
 
         </div>
-        <form action="" method="post" enctype="multipart/form-data" style="padding-top: 44px;">
+        <div class="heading-small">Availability Date</div>
+        <form action="" method="post" enctype="multipart/form-data" >
             <div class="label-container">
                 
                 <label for="calendar">Select Dates&nbsp;<span class="red">*</span></label>
