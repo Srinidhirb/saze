@@ -214,17 +214,16 @@ width: 15px; height:15px;
       <form action="" method="post" onsubmit="return validateForm()">
          <h1>Signup</h1>
          <label for="first_name">First Name:<span class="red">*</span></label>
-         <input type="text" id="first_name" name="first_name" required maxlength="50" placeholder="Enter your first name" class="box">
-
+         <input type="text" id="first_name" name="first_name" required maxlength="50" placeholder="Enter your first name" class="box" value="<?php echo isset($_POST['first_name']) ? htmlspecialchars($_POST['first_name']) : ''; ?>">
          <label for="last_name">Last Name:<span class="red">*</span></label>
-         <input type="text" id="last_name" name="last_name" required maxlength="50" placeholder="Enter your last name" class="box">
+         <input type="text" id="last_name" name="last_name" required maxlength="50" placeholder="Enter your last name" class="box" value="<?php echo isset($_POST['last_name']) ? htmlspecialchars($_POST['last_name']) : ''; ?>">
 
          <label for="email">Email:<span class="red">*</span></label>
-         <input type="email" id="email" name="email" required maxlength="50" placeholder="Enter your email" class="box">
+         <input type="email" id="email" name="email" required maxlength="50" placeholder="Enter your email" class="box" value="<?php echo isset($_POST['email']) ? htmlspecialchars($_POST['email']) : ''; ?>">
 
          <label for="number">Phone Number:<span class="red">*</span></label>
          <!--<input type="number" id="number" name="number" required min="0" max="9999999999" maxlength="10" placeholder="Enter your number" class="box">-->
-         <input type="text" id="number" name="number" required min="0" max="9999999999" maxlength="10" placeholder="Enter your number" class="box" inputmode="numeric" >
+         <input type="text" id="number" name="number" required min="0" max="9999999999" maxlength="10" placeholder="Enter your number" class="box" inputmode="numeric" style="-moz-appearance: textfield;" value="<?php echo isset($_POST['number']) ? htmlspecialchars($_POST['number']) : ''; ?>">
 
 
          <label for="pass">Password:<span class="red">*</span></label>
