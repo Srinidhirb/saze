@@ -142,12 +142,7 @@ $color = 'blue';
             padding: 40px;
         }
 
-        #editProfileDiv form {
-
-            display: flex;
-            margin:0;
-
-        }
+       
 
         #editProfileDiv p {
             color: var(--Text-title, #989797);
@@ -379,6 +374,29 @@ $color = 'blue';
             width: 100%;
 
         }
+        
+.buttons-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.small-btn {
+
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.delete-form {
+    display: inline;
+    margin: 0;
+}
+
+
 
 
 
@@ -399,7 +417,9 @@ $color = 'blue';
             padding: 30px 0 0 0;
            
         }
-
+        .image-container {
+    position: relative;
+}
         .listing-container {
             float: left;
             cursor: pointer;
@@ -411,6 +431,8 @@ $color = 'blue';
             margin-right: 20px;
             /* Adjust the spacing between containers */
             margin-bottom: 20px;
+             position: relative;
+    display: inline-block;
         }
 
         .listing-image {
