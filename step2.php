@@ -349,7 +349,8 @@ function validateFile(input, fileNumber) {
     }
 
     // Display the file name
-    document.getElementById(file-name${fileNumber}).innerText = File: ${file.name};
+    document.getElementById(`file-name${fileNumber}`).innerText = `File: ${file.name}`;
+
 }
 </script>
        
