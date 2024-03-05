@@ -116,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         </div>
         <div class="heading-small">Availability Date</div>
-        <form action="" method="post" enctype="multipart/form-data" >
+        <form action="" method="post" enctype="multipart/form-data" style="padding-top: 44px;">
             <div class="label-container">
                 
                 <label for="calendar">Select Dates&nbsp;<span class="red">*</span></label>
@@ -137,7 +137,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                  
                 <!--<input type="text" id="calendar" name="calendar" placeholder="Select Dates" pattern="\d{4}-\d{2}-\d{2}" required>-->
-                <input type="text" id="calendar" name="calendar" placeholder="YYYY-MM-DD" pattern="\d{4}-\d{2}-\d{2}" title="Please enter a date in the format YYYY-MM-DD" required>
+                <input type="text" id="calendar" name="calendar" placeholder="YYYY-MM-DD" pattern="\d{4}-\d{2}-\d{2}" title="Please enter a date in the format YYYY-MM-DD" required value="<?php echo isset($_SESSION['selectedDates']) ? $_SESSION['selectedDates'] : ''; ?>">
 
             </div>
     

@@ -119,97 +119,120 @@ if (isset($_COOKIE['user_id'])) {
     exit();
 }
 
-$select_users = $conn->prepare("SELECT id, password, first_name, last_name, email, number FROM users WHERE id= ? LIMIT 1");
-$select_users->bind_param("s", $user_id);
-$select_users->execute();
-$select_users->store_result();
-$select_users->bind_result($fetch_user['id'], $fetch_user['password'], $fetch_user['first_name'], $fetch_user['last_name'], $fetch_user['email'], $fetch_user['number']);
-$select_users->fetch();
+$select_user = $conn->prepare("SELECT id, password, first_name, last_name, email, number FROM users WHERE id = ? LIMIT 1");
+$select_user->bind_param("s", $user_id);
+$select_user->execute();
+$select_user->store_result();
+$select_user->bind_result($fetch_user['id'], $fetch_user['password'], $fetch_user['first_name'], $fetch_user['last_name'], $fetch_user['email'], $fetch_user['number']);
+$select_user->fetch();
 
-$rowCount = $select_users->num_rows;
-
+// Check if the form was submitted
 if (isset($_POST['submit'])) {
+    $success_msg = [];
+    $warning_msg = [];
 
-    $first_name = $_POST['first_name'];
-    $first_name = filter_var($first_name, FILTER_SANITIZE_STRING);
-    $last_name = $_POST['last_name'];
-    $last_name = filter_var($last_name, FILTER_SANITIZE_STRING);
-    $number = $_POST['number'];
-    $number = filter_var($number, FILTER_SANITIZE_STRING);
-    $email = $_POST['email'];
-    $email = filter_var($email, FILTER_SANITIZE_STRING);
-
-    if (!empty($first_name)) {
-        $update_first_name = $conn->prepare("UPDATE users SET first_name = ? WHERE id = ?");
-        $update_first_name->bind_param("ss", $first_name, $user_id);
-        $update_first_name->execute();
-        $success_msg[] = 'First name updated!';
-    }
-    if (!empty($last_name)) {
-        $update_last_name = $conn->prepare("UPDATE users SET last_name = ? WHERE id = ?");
-        $update_last_name->bind_param("ss", $last_name, $user_id);
-        $update_last_name->execute();
-        $success_msg[] = 'Last name updated!';
-    }
-
-    if (!empty($email)) {
-        $verify_email = $conn->prepare("SELECT email FROM users WHERE email = ?");
-        $verify_email->bind_param("s", $email);
-        $verify_email->execute();
-        $verify_email->store_result();
-        if ($verify_email->num_rows > 0) {
-            $warning_msg[] = 'Email already taken!';
-        } else {
-            $update_email = $conn->prepare("UPDATE users SET email = ? WHERE id = ?");
-            $update_email->bind_param("ss", $email, $user_id);
-            $update_email->execute();
-            $success_msg[] = 'Email updated!';
-        }
-    }
-
-    if (!empty($number)) {
-        $verify_number = $conn->prepare("SELECT number FROM users WHERE number = ?");
-        $verify_number->bind_param("s", $number);
-        $verify_number->execute();
-        $verify_number->store_result();
-        if ($verify_number->num_rows > 0) {
-            $warning_msg[] = 'Number already taken!';
-        } else {
-            $update_number = $conn->prepare("UPDATE users SET number = ? WHERE id = ?");
-            $update_number->bind_param("ss", $number, $user_id);
-            $update_number->execute();
-            $success_msg[] = 'Number updated!';
-        }
-    }
-
-    $empty_pass = '';
-    $prev_pass = $fetch_user['password'];
     $old_pass = $_POST['old_pass'];
-    $old_pass = filter_var($old_pass, FILTER_SANITIZE_STRING);
     $new_pass = $_POST['new_pass'];
-    $new_pass = filter_var($new_pass, FILTER_SANITIZE_STRING);
     $c_pass = $_POST['c_pass'];
-    $c_pass = filter_var($c_pass, FILTER_SANITIZE_STRING);
+
+
+
 
     if (!empty($old_pass)) {
-        if (password_verify($old_pass, $prev_pass)) {
-            if ($new_pass == $c_pass) {
-                $hashed_password = password_hash($new_pass, PASSWORD_DEFAULT);
-                $update_pass = $conn->prepare("UPDATE users SET password = ? WHERE id = ?");
-                $update_pass->bind_param("ss", $hashed_password, $user_id);
-                $update_pass->execute();
-                $success_msg[] = 'Changes Updated successfully!';
-            } else {
-                $warning_msg[] = 'Confirm password not matched!';
+        if (password_verify($old_pass, $fetch_user['password'])) {
+            // Old password is correct, update other fields
+            $first_name = $_POST['first_name'];
+            if (!empty($first_name)) {
+                $update_first_name = $conn->prepare("UPDATE users SET first_name = ? WHERE id = ?");
+                $update_first_name->bind_param("ss", $first_name, $user_id);
+                $update_first_name->execute();
+                $success_msg[] = 'First name updated!';
+                $fetch_user['first_name'] = $first_name; // Update fetched user data
             }
+
+            $last_name = $_POST['last_name'];
+            if (!empty($last_name)) {
+                $update_last_name = $conn->prepare("UPDATE users SET last_name = ? WHERE id = ?");
+                $update_last_name->bind_param("ss", $last_name, $user_id);
+                $update_last_name->execute();
+                $success_msg[] = 'Last name updated!';
+                $fetch_user['last_name'] = $last_name; // Update fetched user data
+            }
+
+            $email = $_POST['email'];
+            if (!empty($email)) {
+                $verify_email = $conn->prepare("SELECT email FROM users WHERE email = ?");
+                $verify_email->bind_param("s", $email);
+                $verify_email->execute();
+                $verify_email->store_result();
+                if ($verify_email->num_rows > 0) {
+                    $warning_msg[] = 'Email already taken!';
+                } else {
+                    $update_email = $conn->prepare("UPDATE users SET email = ? WHERE id = ?");
+                    $update_email->bind_param("ss", $email, $user_id);
+                    $update_email->execute();
+                    $success_msg[] = 'Email updated!';
+                    $fetch_user['email'] = $email; // Update fetched user data
+                }
+            }
+
+            $number = $_POST['number'];
+            if (!empty($number)) {
+                $verify_number = $conn->prepare("SELECT number FROM users WHERE number = ?");
+                $verify_number->bind_param("s", $number);
+                $verify_number->execute();
+                $verify_number->store_result();
+                if ($verify_number->num_rows > 0) {
+                    $warning_msg[] = 'Number already taken!';
+                } else {
+                    $update_number = $conn->prepare("UPDATE users SET number = ? WHERE id = ?");
+                    $update_number->bind_param("ss", $number, $user_id);
+                    $update_number->execute();
+                    $success_msg[] = 'Number updated!';
+                    $fetch_user['number'] = $number; // Update fetched user data
+                }
+            }
+
+            if (!empty($new_pass) && !empty($c_pass)) {
+                // Update password if new password and confirm password are provided
+                if ($new_pass == $c_pass) {
+                    $hashed_password = password_hash($new_pass, PASSWORD_DEFAULT);
+                    $update_pass = $conn->prepare("UPDATE users SET password = ? WHERE id = ?");
+                    $update_pass->bind_param("ss", $hashed_password, $user_id);
+                    $update_pass->execute();
+                    $success_msg[] = 'Password updated!';
+                } else {
+                    $warning_msg[] = 'Confirm password not matched!';
+                }
+            }
+
+            // Update the fetched user data if password or other fields were updated
+            $select_user->execute();
+            $select_user->store_result();
+            $select_user->bind_result($fetch_user['id'], $fetch_user['password'], $fetch_user['first_name'], $fetch_user['last_name'], $fetch_user['email'], $fetch_user['number']);
+            $select_user->fetch();
         } else {
             $warning_msg[] = 'Old password not matched!';
         }
-    } else {
-        $warning_msg[] = 'Please enter old password!';
+    }
+
+    // Display success or warning messages
+    if (!empty($success_msg)) {
+        echo implode('<br>', $success_msg);
+    }
+    if (!empty($warning_msg)) {
+        echo implode('<br>', $warning_msg);
     }
 }
 ?>
+
+<!-- Include JavaScript to update form fields -->
+<script>
+    document.getElementById('first_name').value = '<?php echo $fetch_user['first_name']; ?>';
+    document.getElementById('last_name').value = '<?php echo $fetch_user['last_name']; ?>';
+    document.getElementById('email').value = '<?php echo $fetch_user['email']; ?>';
+    document.getElementById('number').value = '<?php echo $fetch_user['number']; ?>';
+</script>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -274,68 +297,76 @@ if (isset($_POST['submit'])) {
         </div>
         <hr id='hr'>
         <div class="features">
-            <div id="editProfileDiv">
+        <div id="editProfileDiv">
                 <p>Edit Profile</p>
 
 
 
-                <form action="" method="post">
+                <form id="update-form" action="" method="post">
                     <div class="name">
                         <div class="first">
-                            <label for="first-name">First Name <spam class="red">*</spam></label>
-
+                            <label for="first-name">First Name <span class="red">*</span></label>
                             <input type="text" name="first_name" maxlength="50" placeholder="<?= $fetch_user['first_name']; ?>" class="form-first-name">
                         </div>
                         <div class="last">
-                            <label for="last-name">Last Name <spam class="red">*</spam></label>
+                            <label for="last-name">Last Name <span class="red">*</span></label>
                             <input type="text" name="last_name" maxlength="50" placeholder="<?= $fetch_user['last_name']; ?>" class="form-first-name">
-
                         </div>
                     </div>
                     <div class="name">
                         <div class="first">
-                            <label for="first-name">Email <spam class="red">*</spam></label>
+                            <label for="first-name">Email <span class="red">*</span></label>
                             <input type="email" name="email" maxlength="50" placeholder="<?= $fetch_user['email']; ?>" class="form-first-name">
-
                         </div>
                         <div class="last">
-                            <label for="last-name"> Phone No <spam class="red">*</spam></label>
+                            <label for="last-name"> Phone No <span class="red">*</span></label>
                             <input type="tel" name="number" min="0" max="9999999999" maxlength="10" placeholder="<?= $fetch_user['number']; ?>" class="form-first-name">
-
                         </div>
                     </div>
                     <div class="name">
                         <div class="first">
-                            <label for="first-name">Old password <spam class="red">*</spam></label>
+                            <label for="first-name">Old password <span class="red">*</span></label>
                             <input type="password" name="old_pass" maxlength="20" placeholder="Enter your old password" class="form-first-name">
-
-
                         </div>
                         <div class="last">
-                            <label for="last-name"> New Password <spam class="red">*</spam></label>
+                            <label for="last-name"> New Password <span class="red">*</span></label>
                             <input type="password" name="new_pass" maxlength="20" placeholder="Enter your new password" class="form-first-name">
-
-
                         </div>
                     </div>
                     <div class="name">
                         <div class="first">
-                            <label for="first-name">Old password <spam class="red">*</spam></label>
+                            <label for="first-name">Confirm New Password <span class="red">*</span></label>
                             <input type="password" name="c_pass" maxlength="20" placeholder="Confirm your new password" class="form-first-name">
-
-
-
                         </div>
                         <br>
                         <div class="last">
-                        <label for="first-name"> &nbsp;</label>
                             <input style="height: auto;" type="submit" value="Update Now" name="submit" class="btn">
-
-
-
                         </div>
                     </div>
                 </form>
+
+                <script>
+                    document.getElementById('update-form').addEventListener('submit', function(event) {
+                        var firstName = document.getElementsByName('first_name')[0].value;
+                        var lastName = document.getElementsByName('last_name')[0].value;
+                        var email = document.getElementsByName('email')[0].value;
+                        var number = document.getElementsByName('number')[0].value;
+                        var oldPass = document.getElementsByName('old_pass')[0].value;
+                        var newPass = document.getElementsByName('new_pass')[0].value;
+                        var cPass = document.getElementsByName('c_pass')[0].value;
+
+                        if ((firstName !== '' || lastName !== '' || email !== '' || number !== '') && oldPass === '') {
+                            alert('Old password is required for updating other fields.');
+                            event.preventDefault();
+                        }
+
+                        if ((newPass !== '' || cPass !== '') && (newPass === '' || cPass === '')) {
+                            alert('Both old and new passwords are required for updating password.');
+                            event.preventDefault();
+                        }
+                    });
+                </script>
+
 
             </div>
             <div id="listing">

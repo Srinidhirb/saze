@@ -194,19 +194,37 @@
             <form action="" method="post" enctype="multipart/form-data">
                 <label for="space_area">Space Area <span class="red">*</span> (in Sq.ft)</label>
 
-                <input type="text" name="space_area" id="space_area"  placeholder="Enter Space Area in Sq.ft" required >
+                <input type="text" name="space_area" id="space_area" placeholder="Enter Space Area in Sq.ft" required value="<?php echo isset($_SESSION['spaceArea']) ? $_SESSION['spaceArea'] : ''; ?>">
 
                 <label for="space_des">Description<span class="red">*</span></label>
-                <input type="text" name="space_des" placeholder="Enter Description" id="space_des" required  >
+                <input type="text" name="space_des" placeholder="Enter Description" id="space_des" required value="<?php echo isset($_SESSION['spaceDes']) ? $_SESSION['spaceDes'] : ''; ?>">
                 <h5 class="right">max of 150 words</h5>
 
                 <!-- Add the four image upload fields -->
                 <label for="pace_img">Space Images</label>
-                <?php for ($i = 1; $i <= 4; $i++) : ?>
-                    <label for="space_img<?php echo $i; ?>" class="file-label">Upload Image <?php echo $i; ?></label>
-                    <input type="file" name="space_img<?php echo $i; ?>" id="space_img<?php echo $i; ?>" class="file-input" accept=".jpg, .jpeg, .gif, .png" onchange="validateFile(this, <?php echo $i; ?>)">
-                    <div  id="file-name<?php echo $i; ?>" class="file-name"></div>
-                <?php endfor; ?><br>
+<!-- Add this code to your form -->
+<?php for ($i = 1; $i <= 4; $i++) : ?>
+    <label for="space_img<?php echo $i; ?>" class="file-label">Upload Image <?php echo $i; ?></label>
+    <input type="file" name="space_img<?php echo $i; ?>" id="space_img<?php echo $i; ?>" class="file-input" accept=".jpg, .jpeg, .gif, .png" onchange="validateFile(this, <?php echo $i; ?>)">
+    <div id="file-name<?php echo $i; ?>" class="file-name"><?php echo isset($_SESSION['spaceImages'][$i - 1]) ? $_SESSION['spaceImages'][$i - 1] : ''; ?></div>
+<?php endfor; ?><br>
+
+<?php
+// PHP code to handle file upload and store file names in session
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    for ($i = 1; $i <= 4; $i++) {
+        $fileKey = 'space_img' . $i;
+        if (isset($_FILES[$fileKey]) && $_FILES[$fileKey]['error'] === 0) {
+            $targetDir = 'uploads/';
+            $targetFile = $targetDir . basename($_FILES[$fileKey]['name']);
+            if (move_uploaded_file($_FILES[$fileKey]['tmp_name'], $targetFile)) {
+                $_SESSION['spaceImages'][$i - 1] = $_FILES[$fileKey]['name'];
+            }
+        }
+    }
+}
+?>
+<br>
                 <p class="small" style="font-size: small;"> (Accepted formats are .jpg, .gif , .png and
                     Maximum size allowed 10 MB)</p>
                 <label for="Amenities">Amenities</label>
@@ -331,7 +349,7 @@ function validateFile(input, fileNumber) {
     }
 
     // Display the file name
-    document.getElementById(`file-name${fileNumber}`).innerText = `File: ${file.name}`;
+    document.getElementById(file-name${fileNumber}).innerText = File: ${file.name};
 }
 </script>
        
