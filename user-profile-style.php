@@ -98,7 +98,7 @@ $color = 'blue';
 
         .log {
             display: flex;
-            padding: 80px;
+            padding: 80px 50px 80px 80px;
             padding-bottom: 0;
             flex-direction: column;
          
@@ -242,7 +242,7 @@ $color = 'blue';
                 background-color: #fff;
                 /* Change background color as needed */
                 z-index: 1;
-                height:900px;
+               padding:44px 24px 34px 34px;
                 width:62%;
             }
             #toggleMenuBtn{
@@ -254,11 +254,12 @@ $color = 'blue';
             display: none;
         }
         .features{
-            width:70%;
+            width: 100%;
         }
         #editProfileDiv {
-            width: 100%;
-            padding:0px!important;
+           width: 92%;
+    margin: 0 0 0 20px;
+    padding: 0px !important;
         }
 
             
