@@ -140,6 +140,7 @@ $color = 'blue';
         #editProfileDiv {
             width: 100%;
             padding: 40px;
+            
         }
 
        
@@ -147,11 +148,12 @@ $color = 'blue';
         #editProfileDiv p {
             color: var(--Text-title, #989797);
             font-family: Lato;
-            font-size: 24px;
+            
+            font-size: 18px;
             font-style: normal;
             font-weight: 400;
             line-height: 140%;
-            padding: 23px;
+            padding: 5px;
             /* 33.6px */
         }
 
@@ -308,6 +310,7 @@ $color = 'blue';
             align-items:center;
            flex-wrap:wrap;
             align-items: center;
+            position:relative;
             gap: 20px;
         }
 
@@ -424,8 +427,10 @@ $color = 'blue';
             float: left;
             cursor: pointer;
             background-color: #fff;
-            padding: 20px;
-          width:max-content;
+            padding: 20px 20px 10px 20px;
+          width:cal(100%/4);
+          text-align:center;
+          
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-right: 20px;
